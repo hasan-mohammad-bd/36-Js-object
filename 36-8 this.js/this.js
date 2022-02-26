@@ -21,4 +21,5 @@ const kibria = {
 //regular method take left sided as a context.
 //if there is arrow function the context will be according to upper section.
 //in event handler, it depends on the function how function is calling the,
+//arrow function can't hold the "this" value, 
 //************************************ */
