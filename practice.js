@@ -83,3 +83,19 @@ delete bottle.isCleaned;
 console.log(bottle);
 
 Object.seal(bottle);
+
+//loop through an object.
+
+const bottle1 = { 
+    color: "yellow",
+    hold: "water", 
+    price: 50,
+    isCleaned: true,
+    cantBeDeleted: true
+};
+
+//key value together 
+
+for(const thePair in bottle1){
+    console.log(thePair, bottle[thePair]);
+}
