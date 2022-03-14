@@ -30,6 +30,9 @@ delete bottle.isCleaned;
 console.log(bottle);
 
 //seal: the property can't be deleted if we use this method.
+//can't be deleted any property.
+//can't be insert new property.
+//can be modify of new property
 //=================================================
 
 //can't be deleted
@@ -49,6 +52,9 @@ bottle.height = 12;
 console.log(bottle);
 
 //freeze:
+//can't be deleted any property.
+//can't be insert new property.
+//can't be modify of new property
 //=================================================
 //can't be modified/change, adding new property and deleted.
 Object.freeze(bottle);

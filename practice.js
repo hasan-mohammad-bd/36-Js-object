@@ -55,3 +55,31 @@ const remaining = student.treatDay(900,100);
 const remaining2 = student.treatDay(900,100);
 console.log(remaining);
 console.log(remaining2);
+
+//Object keys.
+const bottle = { 
+    color: "yellow",
+    hold: "water", 
+    price: 50,
+    isCleaned: true,
+    cantBeDeleted: true
+};
+
+const keys = Object.keys(bottle)
+console.log(keys);
+
+console.log(bottle);
+
+const value = Object.values(bottle)
+console.log(value);
+value.forEach(theValue => console.log(theValue))
+
+const pairs = Object.entries(bottle)
+console.log(pairs);
+
+//deleting property.
+
+delete bottle.isCleaned;
+console.log(bottle);
+
+Object.seal(bottle);
